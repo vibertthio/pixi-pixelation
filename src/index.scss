@@ -8,7 +8,7 @@ body {
 	background-color: $background-color;
 	color: $body-color;
 	font-family: $font;
-	text-align: center;
+
 
 	canvas {
 		position: absolute;
@@ -17,5 +17,14 @@ body {
 		top: 0;
 		left: 0;
 		z-index: -1;
+	}
+
+	#title {
+		position: absolute;
+		width: 100%;
+		margin: 0 auto;
+		top: 45%;
+		text-align: center;
+		letter-spacing: 1rem;
 	}
 }

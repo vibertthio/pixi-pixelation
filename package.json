@@ -45,6 +45,7 @@
   "dependencies": {
     "@babel/polyfill": "^7.4.0",
     "core-js": "^3.0.1",
+    "dat.gui": "^0.7.6",
     "pixi.js": "^5.0.2"
   }
 }
