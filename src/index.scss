@@ -1,7 +1,11 @@
-$body-color: #373a6d;
+@import './palette.scss';
+
+$background-color: $c1;
+$body-color: $c3;
 $font: 'Muli', sans-serif;
 
 body {
+	background-color: $background-color;
 	color: $body-color;
 	font-family: $font;
 	text-align: center;
