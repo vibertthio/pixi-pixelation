@@ -5,9 +5,9 @@ import bunnyImg from './assets/bunny.png';
 
 // setup
 const app = new PIXI.Application({
-  width: 400,
-  height: 400,
-  backgroundColor: 0x373a6d,
+  width: window.innerWidth,
+  height: window.innerHeight,
+  backgroundColor: 0xbeeef7,
   transparent: false,
 });
 document.body.appendChild(app.view);
@@ -28,3 +28,10 @@ app.stage.addChild(bunny);
 app.ticker.add((delta) => {
   bunny.rotation += 0.1 * delta;
 });
+
+// resize
+window.onresize = function (e) {
+  var w = window.innerWidth;
+  var h = window.innerHeight;
+  app.renderer.resize(w, h);
+};
