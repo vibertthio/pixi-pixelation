@@ -1,5 +1,8 @@
-$body-color: blue;
+$body-color: #373a6d;
+$font: 'Muli', sans-serif;
 
 body {
-  color: $body-color;
+	color: $body-color;
+	font-family: $font;
+	text-align: center;
 }
